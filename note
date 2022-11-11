@@ -1,0 +1,52 @@
+<div class="services">
+  <h3 class="title">My Projects</h3>
+  <div class="box-container">
+    <div class="box">
+      <!-- <img src="images/icon-html.png" alt="" /> -->
+      <img src="./images/project1.jpg" alt="" class="projects__img" />
+      <h3>
+        Blog <br />
+        SYS-See You Soon
+      </h3>
+      <a
+        href="https://github.com/sametester/sys-client"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Link</a
+      >
+    </div>
+
+    <div class="box">
+      <!-- <img src="images/icon-css.png" alt="" /> -->
+      <h3>QuidWork</h3>
+      <a
+        href="https://github.com/sametester/fastwork-clone-react"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Link</a
+      >
+    </div>
+
+    <div class="box">
+      <h3>from-validation</h3>
+      <a
+        href="https://from-validation.netlify.app/"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Link</a
+      >
+      <!-- <img src="images/icon-javascript.png" alt="" /> -->
+    </div>
+
+    <div class="box">
+      <!-- <img src="images/icon-bootrap.png" alt="" /> -->
+      <h3>Quiz App</h3>
+      <a
+        href="https://quiz-app-gold-eight.vercel.app/"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Link</a
+      >
+    </div>
+  </div>
+</div>

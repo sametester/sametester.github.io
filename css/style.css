@@ -130,6 +130,108 @@ html::-webkit-scrollbar-thumb {
   color: var(--light-color);
 }
 
+/*=============== PROJECTS ===============*/
+
+@media screen and (min-width: 576px) {
+  .projects__content {
+    grid-template-columns: 332px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 776px) {
+  .projects__content {
+    grid-template-columns: repeat(2, 332px);
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.filters__active[data-content] {
+  display: grid;
+}
+
+.projects__card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.projects__card img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects__card:hover .projects__modal {
+  bottom: 0;
+}
+
+.projects__modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    hsla(var(--hue), 24%, 40%, 0.3) 0%,
+    hsla(var(--hue), 24%, 4%, 1) 95%
+  );
+  display: grid;
+  align-items: flex-end;
+  padding: 1.5rem 1.25rem;
+  transition: 0.3s;
+}
+
+.projects__subtitle,
+.projects__title {
+  color: black;
+}
+
+.projects__subtitle {
+  font-size: var(--smaller-font-size);
+}
+
+.projects__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.projects__button {
+  padding: 0.5rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: var(--first-color);
+  color: #000;
+  padding: 1.15rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  /* box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.25);  */
+}
+
+.button i {
+  font-size: 1.25rem;
+}
+
+.button:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+.button__small {
+  padding: 0.75rem;
+  box-shadow: none;
+}
+
+/*===============END PROJECTS ===============*/
+
 .container .information .about .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -143,7 +245,7 @@ html::-webkit-scrollbar-thumb {
 .container .information .about .box-container .box h3 {
   font-size: 15px;
   padding: 10px 0;
-  color: var(--black);
+  /* color: var(--black); */
 }
 
 .container .information .about .box-container .box h3 span {
@@ -156,7 +258,6 @@ html::-webkit-scrollbar-thumb {
 
 .container .information .services .box-container {
   display: flex;
-
   flex-wrap: wrap;
   gap: 15px;
 }
@@ -174,10 +275,10 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 10px;
 }
 
-/* .container .information .services .box-container .box h3 {
+.container .information .services .box-container .box h3 {
   font-size: 15px;
   color: var(--light-color);
-} */
+}
 
 .container .information .skills .box-container {
   display: flex;
@@ -312,6 +413,13 @@ html::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   gap: 15px;
 }
+
+/* .projects {
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1 1 350px;
+  background: var(--light-bg);
+} */
 
 .container .information .experience .box-container .box {
   padding: 20px;
